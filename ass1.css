@@ -146,6 +146,11 @@ footer {
         position: relative;
         opacity: 1;
      }
+
+     h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
     
      header {
         display: flex;
