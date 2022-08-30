@@ -130,7 +130,7 @@ footer {
 }
 
 /* Portrait view */
-@media  (max-width:480px) {
+@media  (max-width:475px) {
 
     body {
         display: flex;
