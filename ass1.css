@@ -155,7 +155,7 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        min-width: 320px;
+        max-width: 360px;
         row-gap: 10px;
         height: 10vh;
         background: #483838;
