@@ -5,9 +5,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
+body { 
     height: 100vh;
     width: 100vw;
     background-image: url(./download.jpg);
@@ -131,7 +129,8 @@ footer {
     padding-left:100px ;
 }
 
-@media  (max-width:480px) {
+/* Portrait view */
+@media  (max-width:360px) {
 
     body {
         display: flex;
@@ -213,8 +212,91 @@ footer {
         background-color: #FF1E00;
         color: white;
         display: flex;
-        height: 6vh;
+        height: 6vh; 
         align-items: center;
         justify-content: center;
     }
+}
+
+/* Landscape view */
+@media (min-width:360px) and (max-width:760px) {
+
+    body { 
+        width: 100vw;
+        background-image: url(./download.jpg);
+        background-color: #cccccc;
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        opacity: 1;
+     }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 8vh;
+        background: #483838;
+        color: white;
+        border-bottom: 2px solid #FF1E00;
+     }
+    
+     header p {
+        display: flex;
+        flex-grow: 1;
+        font-size: 1.5em;
+        font-weight: 600;
+        padding: unset;
+     }
+
+     header nav {
+        display: flex;
+        flex-basis:300px;
+        column-gap: 50px;
+       }
+      
+       header nav a {
+          text-decoration: none;
+          color: inherit;
+          font-size: 1em;
+       }
+
+       .first-section {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 25px;
+    }
+
+    .second-section {
+        height: 8vh;
+        background-color: #483838;
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+
+    .second-section h3 {
+        display: flex;
+        flex-grow: 1;
+        padding:unset;
+    }
+    
+    .second-section div {
+        display: flex;
+        flex-basis: 400px;
+    }
+
+    .third-section {
+        height: unset;
+        display: flex;
+        background-color: white;
+        color: black;
+        column-gap: 40px;
+    }
+    
 }
