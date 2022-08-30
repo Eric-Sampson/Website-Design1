@@ -130,7 +130,7 @@ footer {
 }
 
 /* Portrait view */
-@media  (max-width:360px) {
+@media  (max-width:480px) {
 
     body {
         display: flex;
@@ -154,8 +154,9 @@ footer {
      header {
         display: flex;
         flex-direction: column;
+        flex-grow: 1;
         justify-content: center;
-        max-width: 360px;
+       /* max-width: 360px;*/
         row-gap: 10px;
         height: 10vh;
         background: #483838;
@@ -219,7 +220,7 @@ footer {
 }
 
 /* Landscape view */
-@media (min-width:360px) and (max-width:760px) {
+@media (min-width:480px) and (max-width:760px) {
 
     body { 
         width: 100vw;
@@ -299,4 +300,12 @@ footer {
         column-gap: 40px;
     }
     
+    footer {
+        background-color: #FF1E00;
+        color: white;
+        display: flex;
+        height: 8vh;
+        align-items: center;
+        padding-left:100px ;
+    }
 }
