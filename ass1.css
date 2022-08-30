@@ -220,7 +220,7 @@ footer {
 }
 
 /* Landscape view */
-@media (min-width:480px) and (max-width:760px) {
+@media (min-width:480px) and (max-width:860px) {
 
     body { 
         width: 100vw;
