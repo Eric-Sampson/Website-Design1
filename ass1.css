@@ -151,7 +151,7 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        min-width: 480px;
+        min-width: 320px;
         row-gap: 10px;
         height: 10vh;
         background: #483838;
@@ -163,17 +163,39 @@ footer {
         padding: 0;
      }
 
-     .second-section h3 {
+     .second-section {
+        height: 6vh;
+        background-color: #483838;
         display: flex;
-        flex-grow: 1;
-        padding:0;
+        flex-direction: column;
+        align-items: center;
+        color: white;
     }
 
+    input {
+        height: 25px;
+        width: 200px;
+    }
+    
+    button {
+            height: 25px;
+            width: 80px;
+            background-color: #FF1E00;
+            color: white;
+    }
+    
+    .second-section h3 {
+        text-align: center;
+        font-size: 1em;
+        padding: 0;
+    }
+    
     .second-section div {
         display: flex;
-        flex-basis: 375px;
+        width: unset;
     }
 
+     
     .third-section {
         display: flex;
         background-color: white;
@@ -182,4 +204,12 @@ footer {
         height: unset;
     }
 
+    footer {
+        background-color: #FF1E00;
+        color: white;
+        display: flex;
+        height: 6vh;
+        align-items: center;
+        justify-content: center;
+    }
 }
